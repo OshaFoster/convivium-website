@@ -37,7 +37,7 @@ export default function About() {
               I am a hunter gatherer of wisdoms, anchoring ways of thriving with Pachamama and the realms of existence.
             </p>
             <p>
-              I curate online and in-person gatherings for sharing meaningful ritual according to ancient meaningful calendars. We promote healing music, sacred language acquisition, herbal remedies, fungal potentiators, plant medicines, and wholistic cooking.
+              I curate online and in-person gatherings for sharing meaningful ritual according to ancient calendars. We promote healing music, sacred language acquisition, herbal remedies, fungal potentiators, plant medicines, and wholistic cooking.
             </p>
           </div>
 
