@@ -1,36 +1,97 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+# Convivium - Linda Marie Luna
+
+A personal website for artist and musician Linda Marie Luna, featuring music, resources, blog, and mailing list integration.
 
 ## Getting Started
 
-First, run the development server:
+Run the development server:
 
 ```bash
 npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+Open [http://localhost:3000](http://localhost:3000) (or the port shown in terminal) with your browser to see the result.
 
-You can start editing the page by modifying `app/page.js`. The page auto-updates as you edit the file.
+## What's Built (Phase 1 - MVP)
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+### Homepage Components
 
-## Learn More
+1. **Navigation** - Fixed header with links to all future pages (responsive mobile menu)
+2. **Hero Section** - Full-screen landing with desert landscape background and Convivium meaning
+3. **About Section** - Artist introduction with portrait image (left) and bio text (right)
+4. **Music Section** - 3 song link cards with hover effects (ready for SoundCloud/Bandcamp links)
+5. **Contact Form** - Mailing list signup (prepared for Mailchimp integration)
+6. **Footer** - Simple footer with copyright
 
-To learn more about Next.js, take a look at the following resources:
+## Design System
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+### Color Palette
+Desert-inspired colors from landscape photos:
+- **Primary**: Terracotta, Rust, Burnt Orange
+- **Secondary**: Sky Blue, Soft Lavender
+- **Accent**: Sage Green, Warm Sand
+- **Neutral**: Cream, Soft White
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+All colors defined in `src/app/globals.css`
+
+### Visual Style
+- Clean and minimal with generous whitespace
+- Organic shapes and soft rounded corners
+- Smooth animations and transitions
+- Fully responsive (mobile, tablet, desktop)
+
+## Next Steps
+
+### Content Updates Needed
+1. Replace hero image with video when available
+2. Update About section portrait image
+3. Add real song titles, platforms, and links
+4. Update bio text
+5. Add logo when ready
+
+### Technical Integration
+**Mailchimp Setup**:
+- Create Mailchimp account/list
+- Add API keys to `.env.local`
+- Create API route at `src/app/api/subscribe/route.js`
+- See TODO comment in `src/components/forms/ContactForm.js`
+
+### Future Pages (Phase 2)
+- `/music` - Full music page with players and videos
+- `/elements` - Elements page
+- `/resources` - External links
+- `/blog` - Blog functionality
+
+## Project Structure
+
+```
+src/
+  app/
+    layout.js           # Root layout with Navigation
+    page.js             # Homepage
+    globals.css         # Global styles + color palette
+  components/
+    navigation/Navigation.js
+    sections/Hero.js, About.js, Music.js
+    forms/ContactForm.js
+    Footer.js
+public/
+  images/              # 25 desert landscape photos
+```
+
+## Technologies
+
+- Next.js 15 (App Router)
+- React 19
+- Tailwind CSS v4
+- Geist Sans & Geist Mono fonts
+- Ready for Vercel deployment
+
+## Important Files
+
+- **CLAUDE.md** - Complete project documentation (vision, design decisions, architecture)
+- **globals.css** - Color palette and theme configuration
 
 ## Deploy on Vercel
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+The easiest way to deploy is via the [Vercel Platform](https://vercel.com/new). See [Next.js deployment docs](https://nextjs.org/docs/app/building-your-application/deploying) for details.
