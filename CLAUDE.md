@@ -6,7 +6,7 @@ This file provides guidance to Claude Code (claude.ai/code) when working with co
 
 This is a Next.js 15 website for Convivium, built with the App Router architecture, React 19, and Tailwind CSS v4.
 
-**Artist:** Linda Marie Luna
+**Artist:** Marie 
 
 **Site Name:** Convivium
 - **Meaning:** A banquet, feast, or gathering that stems from the Latin for "living together"
@@ -32,7 +32,7 @@ Build homepage/about page only with:
    - Image left, text right
    - Medium text length bio
    - Generous spacing, soft rounded image
-   - Placeholder image (Linda will provide final later)
+   - Placeholder image (Marie will provide final later)
 
 3. **Music Section**
    - 3 song link cards (row on desktop, stacked on mobile)
@@ -97,7 +97,7 @@ Derived from desert landscape photos (defined in `src/app/globals.css`):
 
 ### Branding
 - Logo: Forthcoming (design with space/flexibility for future logo)
-- Artist name: Linda Marie Luna
+- Artist name: Marie
 - Site name meaning should be incorporated into design
 
 ## Development Commands

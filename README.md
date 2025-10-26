@@ -1,6 +1,6 @@
-# Convivium - Linda Marie Luna
+# Convivium - Marie
 
-A personal website for artist and musician Linda Marie Luna, featuring music, resources, blog, and mailing list integration.
+A personal website for artist and musician Marie, featuring music, resources, blog, and mailing list integration.
 
 ## Getting Started
 

@@ -27,7 +27,7 @@ const inter = Inter({
 });
 
 export const metadata = {
-  title: "Convivium - Linda Marie Luna",
+  title: "Convivium - Marie",
   description: "A gathering for music, fellowship, and conversation.",
 };
 
