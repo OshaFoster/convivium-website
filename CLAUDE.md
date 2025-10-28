@@ -6,14 +6,14 @@ This file provides guidance to Claude Code (claude.ai/code) when working with co
 
 This is a Next.js 15 website for Convivium, built with the App Router architecture, React 19, and Tailwind CSS v4.
 
-**Artist:** Marie 
+**Practitioner:** Marie (alternative spiritual teacher and practitioner)
 
-**Site Name:** Convivium
-- **Meaning:** A banquet, feast, or gathering that stems from the Latin for "living together"
-- In modern usage: A communal meal or friendly gathering for fellowship and conversation, often with a focus on shared interests like faith, food, or study
-- This meaning should be incorporated into the website
+**Site Name:** Pachamama Convivium
+- **Pachamama:** The space of nurturance of life on planet Earth — the atmospheric and earthen elements that promote vitality
+- **Convivium:** A geographically isolated population of a species that shows differentiation from other populations of the same species. In our case, it is our carefully co-created Sangha — a feast, a celebration, a consortium of conviviality and fellowship on Earth
+- From Latin "living together" - a communal gathering for fellowship and conversation
 
-**Purpose:** Personal website for artist/musician showcasing music, resources, blog, and collecting mailing list subscribers.
+**Purpose:** Personal website showcasing music/sound work, spiritual teachings, resources, blog, and collecting mailing list subscribers.
 
 **Deployment:** Vercel
 
@@ -24,20 +24,20 @@ Build homepage/about page only with:
 
 **Homepage Layout:**
 1. **Hero Section**
-   - Full-width landscape photo background (placeholder - will eventually be video)
-   - Centered text overlay with site name and meaning
-   - Organic curved bottom edge transition
+   - Full-width landscape photo background (IMG_1904.png)
+   - Green title "Pachamama Convivium" in Oooh Baby font (#8bc785)
+   - Definitions of Pachamama and Convivium prominently displayed
+   - Organic curved bottom edge transition with coral stroke
 
 2. **About Section**
-   - Image left, text right
-   - Medium text length bio
-   - Generous spacing, soft rounded image
-   - Placeholder image (Marie will provide final later)
+   - Circular image left (bordered in gold), text right
+   - Bio about Marie
+   - Generous spacing, elegant layout
 
 3. **Music Section**
-   - 3 song link cards (row on desktop, stacked on mobile)
-   - Card design: placeholder image, song title, link to SoundCloud/Bandcamp
-   - No thumbnails yet (placeholders)
+   - 3 song cards with circular thumbnails
+   - Hover effects and shadows
+   - Links to music platforms (SoundCloud/Bandcamp)
 
 4. **Contact Form**
    - End of page, centered
@@ -82,23 +82,27 @@ Planned pages (navigation structure should be built with these in mind):
 - Warm earth tones with cool sky accents
 
 ### Color Palette
-Derived from desert landscape photos (defined in `src/app/globals.css`):
-- **Primary:** Warm terracottas, burnt oranges, rust reds (desert rocks)
-- **Secondary:** Sky blues, soft lavenders
-- **Accent:** Sage greens, natural earth tones
-- **Neutral:** Clean whites/creams for backgrounds and contrast
-- Dark mode support via `prefers-color-scheme`
-- CSS variables pattern: `--color-*` for Tailwind v4 compatibility
+Clean, elegant palette (defined in `tailwind.config.js`):
+- **Gold:** #d4af37 (primary accent, borders, highlights)
+- **Warm Cream:** #faf8f4 (main background)
+- **Warm Beige:** #f5f1ea (section backgrounds)
+- **Warm Tan:** #e8dfd3 (borders, subtle backgrounds)
+- **Charcoal:** #262626 (dark backgrounds, scrolled nav)
+- **Charcoal Border:** #333333 (dark mode borders)
+- **Sky Blue:** Sky-400 (hover states, accents)
+- **Coral/Rose:** #eb757f (SVG accents in hero)
+- **Green:** #8bc785 (hero title color)
 
 ### Typography
-- Primary: Geist Sans
-- Monospace: Geist Mono (for code/technical content if needed)
-- Large typography used as design element
+- **Display (Headings):** Playfair Display (elegant serif)
+- **Body:** Inter (clean sans-serif)
+- **Decorative/Script:** Oooh Baby (hero title), Grey Qo
+- Large typography used as design element throughout
 
 ### Branding
-- Logo: Forthcoming (design with space/flexibility for future logo)
-- Artist name: Marie
-- Site name meaning should be incorporated into design
+- Logo: LOGO.png (circular logo with gold border in navigation)
+- Practitioner: Marie (alternative spiritual teacher)
+- Site name: Pachamama Convivium (meanings prominently displayed in hero)
 
 ## Development Commands
 
@@ -133,15 +137,15 @@ Runs ESLint with Next.js core-web-vitals config.
 - File-based routing in `src/app/`
 - Supports streaming and React Suspense
 
-**Styling:** Tailwind CSS v4
-- Configuration in `postcss.config.mjs` using `@tailwindcss/postcss` plugin
-- Global styles and theme configuration in `src/app/globals.css`
-- Uses CSS variables for theming with light/dark mode support
-- Custom theme tokens defined with `@theme inline` directive
+**Styling:** Tailwind CSS v3
+- Configuration in `tailwind.config.js` (downgraded from v4 for stability)
+- Global styles in `src/app/globals.css`
+- Custom color palette defined in config
+- Standard Tailwind v3 syntax with `@tailwind` directives
 
 **Fonts:**
-- Geist Sans and Geist Mono loaded via `next/font/google`
-- Configured as CSS variables in root layout
+- Playfair Display, Inter, Grey Qo, and Oooh Baby loaded via `next/font/google`
+- Configured as CSS variables in root layout (--font-display, --font-body, --font-grey-qo, --font-oooh-baby)
 
 **Path Aliases:**
 - `@/*` maps to `./src/*` (configured in `jsconfig.json`)
@@ -202,10 +206,36 @@ Build reusable components from the start:
 - Metadata is exported from page/layout files for SEO
 - ESLint ignores: `node_modules/`, `.next/`, `out/`, `build/`, `next-env.d.ts`
 
-## Tailwind CSS v4 Notes
+## Tailwind CSS Version History
 
-This project uses Tailwind CSS v4, which has significant differences from v3:
-- Import with `@import "tailwindcss"` in CSS (not v3's `@tailwind` directives)
-- Theme customization uses `@theme` directive instead of `tailwind.config.js`
-- PostCSS plugin is `@tailwindcss/postcss` (not `tailwindcss`)
-- CSS variables should be defined in theme with `--color-*`, `--font-*` patterns
+**Current:** Tailwind CSS v3
+- Project initially started with v4 but was downgraded to v3 for stability
+- v4 had compatibility issues with Next.js 15 + Turbopack
+- Uses standard `tailwind.config.js` for configuration
+- Standard `@tailwind base/components/utilities` directives in globals.css
+
+## Current Components
+
+**Implemented:**
+- `<Navigation />` - Fixed header with scroll effects, mobile menu, logo integration (src/components/navigation/Navigation.js)
+- `<Logo />` - Circular logo component using LOGO.png image (src/components/Logo.js)
+- `<Hero />` - Full-screen hero with background image and Pachamama/Convivium definitions (src/components/sections/Hero.js)
+- `<About />` - About section with circular image and bio (src/components/sections/About.js)
+- `<Music />` - Music cards with circular thumbnails (src/components/sections/Music.js)
+- `<Testimonials />` - Testimonial cards with scroll animations (src/components/sections/Testimonials.js)
+- `<ContactForm />` - Mailing list signup form prepared for Mailchimp (src/components/forms/ContactForm.js)
+- `<Footer />` - Footer with social media links (Bandcamp, SoundCloud, Instagram) (src/components/Footer.js)
+- `<ScrollReveal />` - Intersection Observer-based scroll animation wrapper (src/components/ScrollReveal.js)
+
+## Technical Fixes Applied
+
+1. **Build Errors Fixed:**
+   - Unescaped quotes in Testimonials.js replaced with HTML entities (&ldquo;/&rdquo;)
+   - React hooks warning in ScrollReveal.js fixed by copying ref.current to variable in useEffect
+
+2. **Tailwind Migration:**
+   - Downgraded from v4 to v3 for stability
+   - Updated all import syntax and configuration structure
+
+3. **Name Updates:**
+   - Replaced all instances of "Linda Marie Luna" with "Marie" throughout codebase

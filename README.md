@@ -1,6 +1,6 @@
-# Convivium - Marie
+# Pachamama Convivium - Marie
 
-A personal website for artist and musician Marie, featuring music, resources, blog, and mailing list integration.
+A personal website for Marie, an alternative spiritual teacher and practitioner, featuring music/sound work, spiritual teachings, resources, blog, and mailing list integration.
 
 ## Getting Started
 
@@ -17,8 +17,8 @@ Open [http://localhost:3000](http://localhost:3000) (or the port shown in termin
 ### Homepage Components
 
 1. **Navigation** - Fixed header with links to all future pages (responsive mobile menu)
-2. **Hero Section** - Full-screen landing with desert landscape background and Convivium meaning
-3. **About Section** - Artist introduction with portrait image (left) and bio text (right)
+2. **Hero Section** - Full-screen landing with desert landscape background and Pachamama/Convivium definitions
+3. **About Section** - Introduction with circular portrait image (left) and bio text (right)
 4. **Music Section** - 3 song link cards with hover effects (ready for SoundCloud/Bandcamp links)
 5. **Contact Form** - Mailing list signup (prepared for Mailchimp integration)
 6. **Footer** - Simple footer with copyright
@@ -26,13 +26,14 @@ Open [http://localhost:3000](http://localhost:3000) (or the port shown in termin
 ## Design System
 
 ### Color Palette
-Desert-inspired colors from landscape photos:
-- **Primary**: Terracotta, Rust, Burnt Orange
-- **Secondary**: Sky Blue, Soft Lavender
-- **Accent**: Sage Green, Warm Sand
-- **Neutral**: Cream, Soft White
+Clean, elegant palette:
+- **Gold**: #d4af37 (primary accent)
+- **Warm Cream**: #faf8f4 (main background)
+- **Charcoal**: #262626 (dark backgrounds)
+- **Sky Blue**: Hover accents
+- **Green**: #8bc785 (hero title)
 
-All colors defined in `src/app/globals.css`
+All colors defined in `tailwind.config.js`
 
 ### Visual Style
 - Clean and minimal with generous whitespace
@@ -44,10 +45,9 @@ All colors defined in `src/app/globals.css`
 
 ### Content Updates Needed
 1. Replace hero image with video when available
-2. Update About section portrait image
+2. Update About section portrait image if needed
 3. Add real song titles, platforms, and links
-4. Update bio text
-5. Add logo when ready
+4. Update bio text as needed
 
 ### Technical Integration
 **Mailchimp Setup**:
@@ -83,8 +83,8 @@ public/
 
 - Next.js 15 (App Router)
 - React 19
-- Tailwind CSS v4
-- Geist Sans & Geist Mono fonts
+- Tailwind CSS v3 (downgraded from v4 for stability)
+- Playfair Display, Inter, Oooh Baby, Grey Qo fonts
 - Ready for Vercel deployment
 
 ## Important Files

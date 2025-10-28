@@ -27,8 +27,8 @@ const inter = Inter({
 });
 
 export const metadata = {
-  title: "Convivium - Marie",
-  description: "A gathering for music, fellowship, and conversation.",
+  title: "Pachamama Convivium - Marie",
+  description: "A gathering for music, spiritual teachings, fellowship, and conversation.",
 };
 
 export default function RootLayout({ children }) {
