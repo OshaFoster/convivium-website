@@ -14,30 +14,29 @@ export default function ContactForm() {
     e.preventDefault();
     setStatus('submitting');
 
-    // TODO: Integrate with Mailchimp API
-    // For now, just simulate a submission
-    setTimeout(() => {
-      setStatus('success');
-      setFormData({ name: '', email: '' });
-      setTimeout(() => setStatus(''), 3000);
-    }, 1000);
+    try {
+      const response = await fetch('/api/subscribe', {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify(formData),
+      });
 
-    // Example Mailchimp integration structure:
-    // try {
-    //   const response = await fetch('/api/subscribe', {
-    //     method: 'POST',
-    //     headers: { 'Content-Type': 'application/json' },
-    //     body: JSON.stringify(formData),
-    //   });
-    //   if (response.ok) {
-    //     setStatus('success');
-    //     setFormData({ name: '', email: '' });
-    //   } else {
-    //     setStatus('error');
-    //   }
-    // } catch (error) {
-    //   setStatus('error');
-    // }
+      const data = await response.json();
+
+      if (response.ok) {
+        setStatus('success');
+        setFormData({ name: '', email: '' });
+        setTimeout(() => setStatus(''), 5000);
+      } else {
+        console.error('Subscription error:', data);
+        setStatus('error');
+        setTimeout(() => setStatus(''), 5000);
+      }
+    } catch (error) {
+      console.error('Subscription error:', error);
+      setStatus('error');
+      setTimeout(() => setStatus(''), 5000);
+    }
   };
 
   const handleChange = (e) => {
