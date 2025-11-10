@@ -29,18 +29,18 @@ export default function About() {
       {/* Photo Montage Background - Full Section */}
       <PhotoMontage images={montageImages} className="absolute inset-0" />
 
-      <div className="relative z-10 max-w-7xl mx-auto min-h-[600px] flex items-end justify-end pb-12 pr-8">
-        {/* Content - With background - ~200px tall, wide enough for text */}
+      <div className="relative z-10 max-w-7xl mx-auto min-h-[600px] md:min-h-[600px] flex items-end justify-center md:justify-end pb-2 md:pb-12 px-4 md:pr-8">
+        {/* Content - With background - responsive sizing and positioning */}
         <ScrollReveal delay={200}>
-        <div className="backdrop-blur-md px-8 py-8 rounded-xl shadow-lg border border-white/30 max-w-2xl" style={{ backgroundColor: 'rgba(250, 248, 245, 0.4)' }}>
+        <div className="backdrop-blur-md px-4 py-4 md:px-8 md:py-8 rounded-xl shadow-lg border border-white/30 w-full max-w-md md:max-w-2xl" style={{ backgroundColor: 'rgba(250, 248, 245, 0.4)' }}>
           <div className="relative mb-3">
-            <div className="absolute -left-6 top-1/2 -translate-y-1/2 w-1 h-14 bg-gradient-to-b rounded-full" style={{ backgroundImage: 'linear-gradient(to bottom, #8bc785, transparent)' }}></div>
-            <h2 className="text-4xl font-extralight tracking-tight" style={{ color: '#0a729f' }}>
+            <div className="absolute -left-4 md:-left-6 top-1/2 -translate-y-1/2 w-1 h-10 md:h-14 bg-gradient-to-b rounded-full" style={{ backgroundImage: 'linear-gradient(to bottom, #8bc785, transparent)' }}></div>
+            <h2 className="text-3xl md:text-4xl font-extralight tracking-tight" style={{ color: '#0a729f' }}>
               Marie
             </h2>
           </div>
 
-          <div className="space-y-3 text-base text-neutral-800 leading-relaxed font-light">
+          <div className="space-y-2 md:space-y-3 text-sm md:text-base text-neutral-800 leading-relaxed font-light">
             <p>
               I am a hunter gatherer of wisdoms, anchoring ways of thriving with Pachamama and the realms of existence.
             </p>

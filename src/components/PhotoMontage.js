@@ -61,7 +61,9 @@ export default function PhotoMontage({ images, className = '' }) {
         const seed = index * 123.456;
         const x = (Math.sin(seed) * 35) + 50; // 15-85% range
         const y = (Math.cos(seed) * 30) + 50; // 20-80% range
-        const size = 350 + (Math.abs(Math.sin(seed * 2)) * 200); // 350-550px size
+        // Responsive size: 60-80% on mobile, 350-550px on desktop
+        const sizePercent = 60 + (Math.abs(Math.sin(seed * 2)) * 20); // 60-80%
+        const sizePx = 350 + (Math.abs(Math.sin(seed * 2)) * 200); // 350-550px
         const rotation = (Math.sin(seed * 3) * 2) - 1; // -1 to +1 degrees
 
         const isVisible = visibleImages.has(index);
@@ -74,8 +76,8 @@ export default function PhotoMontage({ images, className = '' }) {
               left: `${x}%`,
               top: `${y}%`,
               transform: `translate(-50%, -10%) rotate(${rotation}deg)`,
-              width: `${size}px`,
-              height: `${size}px`,
+              width: `min(${sizePercent}vw, ${sizePx}px)`,
+              height: `min(${sizePercent}vw, ${sizePx}px)`,
               opacity: isVisible ? 1 : 0,
               zIndex: isVisible ? 1 : 0,
             }}
