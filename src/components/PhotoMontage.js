@@ -69,7 +69,7 @@ export default function PhotoMontage({ images, className = '' }) {
         return (
           <div
             key={index}
-            className="absolute transition-opacity duration-[2500ms] ease-in-out"
+            className="absolute transition-opacity duration-[3500ms] ease-in-out"
             style={{
               left: `${x}%`,
               top: `${y}%`,
