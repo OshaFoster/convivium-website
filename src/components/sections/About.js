@@ -25,31 +25,36 @@ const montageImages = [
 
 export default function About() {
   return (
-    <section className="relative py-32 px-6 overflow-hidden bg-warm-cream">
+    <section className="relative py-24 px-6 overflow-hidden bg-warm-cream">
       {/* Photo Montage Background - Full Section */}
       <PhotoMontage images={montageImages} className="absolute inset-0" />
 
-      <div className="relative z-10 max-w-7xl mx-auto min-h-[600px] md:min-h-[600px] flex items-end justify-center md:justify-end pb-2 md:pb-12 px-4 md:pr-8">
+      <div className="relative z-10 max-w-6xl mx-auto min-h-[800px] md:min-h-[800px] flex items-end justify-center px-4" style={{ paddingBottom: '0px' }}>
+        <div className="w-full flex justify-center md:justify-center md:pr-0 lg:pr-24">
         {/* Content - With background - responsive sizing and positioning */}
         <ScrollReveal delay={200}>
-        <div className="backdrop-blur-md px-4 py-4 md:px-8 md:py-8 rounded-xl shadow-lg border border-white/30 w-full max-w-md md:max-w-2xl" style={{ backgroundColor: 'rgba(250, 248, 245, 0.4)' }}>
-          <div className="relative mb-3">
-            <div className="absolute -left-4 md:-left-6 top-1/2 -translate-y-1/2 w-1 h-10 md:h-14 bg-gradient-to-b rounded-full" style={{ backgroundImage: 'linear-gradient(to bottom, #8bc785, transparent)' }}></div>
-            <h2 className="text-3xl md:text-4xl font-extralight tracking-tight" style={{ color: '#0a729f' }}>
+        <div className="backdrop-blur-md px-4 py-4 md:px-8 md:py-8 rounded-xl shadow-md border border-white/30 w-full max-w-md md:max-w-2xl" style={{ backgroundColor: 'rgba(250, 220, 215, 0.30)' }}>
+          <div className="relative mb-4">
+            <h2 className="text-3xl md:text-4xl font-extralight tracking-tight pb-2" style={{ color: '#0a729f' }}>
               Marie
             </h2>
+            <div className="w-16 h-0.5 rounded-full" style={{ background: 'linear-gradient(to right, #d4af37, transparent)' }}></div>
           </div>
 
           <div className="space-y-2 md:space-y-3 text-sm md:text-base text-neutral-800 leading-relaxed font-light">
             <p>
-              I am a hunter gatherer of wisdoms, anchoring ways of thriving with Pachamama and the realms of existence.
+              I am a hunter gatherer of wisdoms, anchoring ways of thriving with Pachamama and the many luminous realms of existence.
             </p>
             <p>
-              I curate online and in-person gatherings for sharing meaningful ritual according to ancient calendars. We promote healing music, sacred language acquisition, herbal remedies, fungal potentiators, plant medicines, and wholistic cooking.
+              I co-curate online and in-person gatherings for sharing meaningful conversations, simple soothing rituals, and gentle self-care. Following our ancient ancestral calendars of holy days is a powerful practice for coming together. We will take note of full moon, new moon, solstices, equinoxes, and cross-quarter days when we gather or connect.
+            </p>
+            <p>
+              My tenderly proactive approaches include opening us up to healing music, sacred language acquisition, herbal remedies, fungal potentiators, plant medicines, wholistic cooking, creative writing and songmaking, and all that makes us honorable beings.
             </p>
           </div>
         </div>
         </ScrollReveal>
+        </div>
       </div>
     </section>
   );
