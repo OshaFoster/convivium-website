@@ -25,20 +25,20 @@ const montageImages = [
 
 export default function About() {
   return (
-    <section className="relative py-24 px-6 overflow-hidden bg-warm-cream">
+    <section className="relative py-32 px-6 overflow-hidden bg-warm-cream">
       {/* Photo Montage Background - Full Section */}
       <PhotoMontage images={montageImages} className="absolute inset-0" />
 
-      <div className="relative z-10 max-w-6xl mx-auto min-h-[800px] md:min-h-[800px] flex items-end justify-center px-4" style={{ paddingBottom: '0px' }}>
-        <div className="w-full flex justify-center md:justify-center md:pr-0 lg:pr-24">
+      <div className="relative z-10 max-w-6xl mx-auto min-h-[500px] md:min-h-[800px] flex items-end justify-center px-4 pb-0">
+        <div className="w-full flex justify-center">
         {/* Content - With background - responsive sizing and positioning */}
         <ScrollReveal delay={200}>
-        <div className="backdrop-blur-md px-4 py-4 md:px-8 md:py-8 rounded-xl shadow-md border border-white/30 w-full max-w-md md:max-w-2xl" style={{ backgroundColor: 'rgba(250, 220, 215, 0.30)' }}>
+        <div className="backdrop-blur-md px-4 py-4 md:px-6 md:py-8 rounded-xl shadow-md border border-white/30 w-[90vw] md:w-[60vw] max-w-5xl mt-[300px] md:mt-0" style={{ backgroundColor: 'rgba(250, 220, 215, 0.40)' }}>
           <div className="relative mb-4">
             <h2 className="text-3xl md:text-4xl font-extralight tracking-tight pb-2" style={{ color: '#0a729f' }}>
               Marie
             </h2>
-            <div className="w-16 h-0.5 rounded-full" style={{ background: 'linear-gradient(to right, #d4af37, transparent)' }}></div>
+            <div className="w-16 h-0.5 rounded-full" style={{ background: 'linear-gradient(to right, #eb757f, transparent)' }}></div>
           </div>
 
           <div className="space-y-2 md:space-y-3 text-sm md:text-base text-neutral-800 leading-relaxed font-light">
@@ -46,10 +46,13 @@ export default function About() {
               I am a hunter gatherer of wisdoms, anchoring ways of thriving with Pachamama and the many luminous realms of existence.
             </p>
             <p>
-              I co-curate online and in-person gatherings for sharing meaningful conversations, simple soothing rituals, and gentle self-care. Following our ancient ancestral calendars of holy days is a powerful practice for coming together. We will take note of full moon, new moon, solstices, equinoxes, and cross-quarter days when we gather or connect.
+              I co-curate online and in-person gatherings for sharing meaningful conversations, simple soothing rituals, and gentle self-care. Following our ancient ancestral calendars of holy days is a powerful practice for coming together. We will take note of full moons, new moons, solstices, equinoxes, and cross-quarter days when we gather and connect.
             </p>
             <p>
-              My tenderly proactive approaches include opening us up to healing music, sacred language acquisition, herbal remedies, fungal potentiators, plant medicines, wholistic cooking, creative writing and songmaking, and all that makes us honorable beings.
+              I encourage and facilitate connecting with the tenderness and fierceness of Nature. With the cleansing that is possible with a strong drench of silence. With the peace that can be found in the moments of bare awareness.
+            </p>
+            <p>
+              My tender proactive approach includes opening to: healing music, sacred language acquisition, herbal remedies, fungal potentiators, plant medicines, wholistic cooking, creative writing and songmaking, and hands-on interface with sustenance security, and shelter acquisition. These are important aspects within the infinite spectrum that shapes us into integral and grounded earth beings.
             </p>
           </div>
         </div>
