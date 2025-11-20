@@ -28,7 +28,7 @@ export default function Music() {
                 className="w-full rounded-lg shadow-xl"
                 preload="metadata"
               >
-                <source src="https://iujb84v0ejq8dzag.public.blob.vercel-storage.com/Pachakunata%20Wasichay.mov" type="video/quicktime" />
+                <source src="https://iujb84v0ejq8dzag.public.blob.vercel-storage.com/pachakunata-wasichay_8ydMKWrR.mp4" type="video/mp4" />
                 Your browser does not support the video element.
               </video>
             </div>
