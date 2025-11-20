@@ -5,7 +5,7 @@ export default function Hero() {
       <div
         className="absolute inset-0 bg-cover bg-center bg-no-repeat"
         style={{
-          backgroundImage: 'url(/images/IMG_1904.png)',
+          backgroundImage: 'url(/images/IMG_1904.webp)',
         }}
       >
         {/* Subtle gradient overlay for text readability */}
