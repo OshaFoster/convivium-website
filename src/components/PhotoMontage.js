@@ -35,9 +35,9 @@ export default function PhotoMontage({ images, className = '' }) {
     setVisibleImages(new Set([initialIdx]));
     setRecentImages([initialIdx]);
 
-    // Set up interval for transitions (every 4-6 seconds)
+    // Set up interval for transitions (every 3.5 seconds)
     const scheduleNext = () => {
-      const delay = 4000 + Math.random() * 2000; // 4-6 seconds
+      const delay = 3500; // 3.5 seconds
       return setTimeout(() => {
         animateImages();
         timeoutId = scheduleNext();
