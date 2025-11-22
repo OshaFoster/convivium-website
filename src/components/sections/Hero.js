@@ -14,8 +14,8 @@ export default function Hero() {
 
       {/* Content */}
       <div className="relative z-10 flex h-full flex-col items-center justify-center px-6 text-center pt-16 md:pr-48">
-        <h1 className="mb-6 text-7xl font-bold md:text-7xl lg:text-8xl drop-shadow-lg" style={{ fontFamily: 'var(--font-oooh-baby)', color: '#8bc785', textShadow: '0 2px 8px rgba(0,0,0,0.5)' }}>
-          Pachamama Convivium
+        <h1 className="mb-6 text-8xl font-normal md:text-8xl lg:text-9xl drop-shadow-lg" style={{ fontFamily: 'var(--font-smooch-sans)', color: '#8bc785', textShadow: '0 2px 8px rgba(0,0,0,0.5)' }}>
+          pachamama convivium
         </h1>
         <div className="max-w-2xl space-y-4 text-lg font-light md:text-xl backdrop-blur-[2px] p-6 rounded-2xl" style={{ color: '#fff5f0', textShadow: '0 1px 4px rgba(0,0,0,0.5)' }}>
           <p>

@@ -23,3 +23,6 @@ export const colors = {
   // Background
   cream: '#fdfbf7', // Slightly warm cream - adjust as needed
 };
+
+
+

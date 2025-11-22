@@ -40,9 +40,9 @@ export default function Navigation() {
               className={`text-3xl transition-colors duration-300 ${
                 isScrolled ? 'text-white' : 'text-neutral-900'
               }`}
-              style={{ fontFamily: 'var(--font-oooh-baby)' }}
+              style={{ fontFamily: 'var(--font-smooch-sans)' }}
             >
-              Pachamama Convivium
+              pachamama convivium
             </span>
           </Link>
 
