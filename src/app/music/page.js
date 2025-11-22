@@ -109,7 +109,7 @@ export default function MusicPage() {
         <div className="max-w-7xl mx-auto">
           {/* Section Header */}
           <div className="text-center mb-20">
-            <h1 className="text-5xl md:text-6xl font-extralight tracking-tight text-neutral-900 mb-4">
+            <h1 className="text-5xl md:text-6xl font-extralight tracking-tight mb-4" style={{ color: '#0a729f' }}>
               Listen
             </h1>
             <p className="text-xl font-light text-neutral-600 max-w-2xl mx-auto">

@@ -27,7 +27,7 @@ const inter = Inter({
 });
 
 export const metadata = {
-  title: "Pachamama Convivium - Marie",
+  title: "Pachamama Convivium",
   description: "A gathering for music, spiritual teachings, fellowship, and conversation.",
 };
 
