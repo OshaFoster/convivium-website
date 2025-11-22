@@ -46,13 +46,10 @@ export default function About() {
               I am a hunter gatherer of wisdoms, anchoring ways of thriving with Pachamama and the many luminous realms of existence.
             </p>
             <p>
-              I co-curate online and in-person gatherings for sharing meaningful conversations, simple soothing rituals, and gentle self-care. Following our ancient ancestral calendars of holy days is a powerful practice for coming together. We will take note of full moons, new moons, solstices, equinoxes, and cross-quarter days when we gather and connect.
+              I co-curate online and in-person gatherings for sharing meaningful conversations, simple soothing rituals, and gentle self-care. Following our ancient ancestral calendars of holy days is a powerful practice for coming together. We will take note of full moon, new moon, solstices, equinoxes, and cross-quarter days when we gather or connect.
             </p>
             <p>
-              I encourage and facilitate connecting with the tenderness and fierceness of Nature. With the cleansing that is possible with a strong drench of silence. With the peace that can be found in the moments of bare awareness.
-            </p>
-            <p>
-              My tender proactive approach includes opening to: healing music, sacred language acquisition, herbal remedies, fungal potentiators, plant medicines, wholistic cooking, creative writing and songmaking, and hands-on interface with sustenance security, and shelter acquisition. These are important aspects within the infinite spectrum that shapes us into integral and grounded earth beings.
+              My tenderly proactive approaches include opening us up to the subtle power of meditation and visualization, healing music, sacred language acquisition, herbal remedies, fungal potentiators, plant medicines, wholistic cooking, creative writing and songmaking, and all that makes us honorable beings.
             </p>
           </div>
         </div>

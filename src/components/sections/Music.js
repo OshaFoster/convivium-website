@@ -6,11 +6,11 @@ export default function Music() {
       <div className="max-w-7xl mx-auto">
         {/* Section Header */}
         <div className="text-center mb-20">
-          <h2 className="text-5xl md:text-6xl font-extralight tracking-tight text-neutral-900 mb-4">
-            Sangha
+          <h2 className="text-5xl md:text-6xl font-extralight tracking-tight mb-4" style={{ color: '#0a729f' }}>
+            Singing to Sacred Landscapes
           </h2>
           <p className="text-xl font-light text-neutral-600 max-w-2xl mx-auto">
-            [Description text will go here - waiting for content from Marie]
+            This tune was gifted to me while hiking near a location with ancient art and undulating crystal-laden rock structures. It is called Pachakunata Wasichay—Building Worlds.
           </p>
           <div className="mt-6 flex items-center justify-center gap-3 max-w-xl mx-auto">
             <div className="h-0.5 flex-1 bg-gradient-to-r from-transparent via-gold to-gold"></div>
