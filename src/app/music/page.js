@@ -8,21 +8,30 @@ const songData = [
     title: 'Pachamama Pachakamaq',
     audioFile: '/songs/pachamama-pachakamaq.m4a',
     image: '/images/IMG_2380.webp',
-    description: 'A sacred soundscape honoring the nurturing spirit of Pachamama and the cosmic creator Pachakamaq.',
+    description: 'This is our Convivium Sangha\'s version of a revered song honoring the life-giving forces of Pachamama and Pachakamaq. This globally loved song comes from Kike Pinto, a renowned Peruvian teacher, composer, ethnomusicologist, and cultural guardian who has spent his life learning, preserving, and sharing the musical languages of the Andes and Amazon.',
+    link: 'https://institutotaki.com/kike-pinto-cardenas/',
+    linkText: 'Learn more about Kike Pinto',
   },
   {
     id: 2,
-    title: 'Huailina Song (Sacred Songs to the Waters)',
+    title: 'Cuñaq, rendition by the Convivium Sangha',
     audioFile: '/songs/cunaq.m4a',
     image: '/images/IMG_6210.webp',
-    description: 'A journey of love and connection through sacred sound.',
+    description: 'A hualina is a song channeled from the joy that comes when the waters arrive from the sacred mountains, having navigated a long serpentine journey through arroyos and valleys, to bring the blessing of life to our villages, crops, and gardens. Traditionally in Peru, hualinas are sung at an annual celebration called Champería, the festival of new water. This hualina was composed by Miguel Molina, and has spread all over the world in singing circles, as a celebration of the supreme life-giver: water. May this song inspire you to sing to your waters, wherever you may be residing!',
   },
   {
     id: 3,
-    title: 'Violin Icaro Medley',
+    title: 'Violin Medley-Maestro Moon (Uniéndo by the Convivium Sangha)',
     audioFile: '/songs/don-violin.m4a',
     image: '/images/IMG_8172.webp',
     description: 'An enchanting violin journey weaving sacred melodies.',
+  },
+  {
+    id: 4,
+    title: 'White Buffalo Home',
+    audioFile: '/songs/white-buffalo-home.m4a',
+    image: '/images/IMG_2380.webp',
+    description: 'Original song by Emily Bloom, performed by Emily Bloom.',
   },
 ];
 
@@ -54,6 +63,18 @@ function SongCard({ song, index }) {
           <p className="text-neutral-600 text-sm leading-relaxed mb-4">
             {song.description}
           </p>
+
+          {/* External Link */}
+          {song.link && (
+            <a
+              href={song.link}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="text-sky-600 hover:text-sky-700 text-sm mb-4 inline-block"
+            >
+              {song.linkText || song.link}
+            </a>
+          )}
 
           {/* Audio Player */}
           <audio
