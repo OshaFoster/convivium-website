@@ -55,7 +55,7 @@ export default function ContactForm() {
           <h2 className="text-5xl md:text-6xl font-extralight tracking-tight mb-4" style={{ fontFamily: 'var(--font-smooch-sans)', color: '#0a729f' }}>
             Join the Gathering
           </h2>
-          <p className="text-xl font-light text-neutral-600">
+          <p className="text-lg font-light text-neutral-600">
             Subscribe to receive updates on new music, events, and reflections
           </p>
           <div className="mt-6 flex items-center justify-center gap-3 max-w-xl mx-auto">

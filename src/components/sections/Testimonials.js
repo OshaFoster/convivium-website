@@ -46,7 +46,7 @@ export default function Testimonials() {
               </svg>
 
               {/* Quote */}
-              <p className="text-neutral-700 text-base leading-relaxed mb-6 italic">
+              <p className="text-neutral-700 text-sm md:text-base leading-relaxed mb-6 italic">
                 &ldquo;{testimonial.quote}&rdquo;
               </p>
 

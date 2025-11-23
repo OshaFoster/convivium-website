@@ -35,7 +35,7 @@ export default function About() {
         <ScrollReveal delay={200}>
         <div className="backdrop-blur-md px-4 py-4 md:px-6 md:py-8 rounded-xl shadow-md border border-white/30 w-[90vw] md:w-[60vw] max-w-5xl mt-[300px] md:mt-0" style={{ backgroundColor: 'rgba(250, 220, 215, 0.40)' }}>
           <div className="relative mb-4">
-            <h2 className="text-3xl md:text-4xl font-extralight tracking-tight pb-2" style={{ fontFamily: 'var(--font-smooch-sans)', color: '#0a729f' }}>
+            <h2 className="text-5xl md:text-6xl font-extralight tracking-tight pb-2" style={{ fontFamily: 'var(--font-smooch-sans)', color: '#0a729f' }}>
               Marie
             </h2>
             <div className="w-16 h-0.5 rounded-full" style={{ background: 'linear-gradient(to right, #eb757f, transparent)' }}></div>
