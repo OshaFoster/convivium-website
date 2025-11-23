@@ -19,7 +19,7 @@ export default function Testimonials() {
       <div className="max-w-6xl mx-auto">
         {/* Section Header */}
         <div className="text-center mb-20">
-          <h2 className="text-5xl md:text-6xl font-extralight tracking-tight mb-4" style={{ color: '#0a729f' }}>
+          <h2 className="text-5xl md:text-6xl font-extralight tracking-tight mb-4" style={{ fontFamily: 'var(--font-smooch-sans)', color: '#0a729f' }}>
             What People Say
           </h2>
           <div className="mt-6 flex items-center justify-center gap-3 max-w-xl mx-auto">

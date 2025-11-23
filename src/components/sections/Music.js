@@ -6,7 +6,7 @@ export default function Music() {
       <div className="max-w-7xl mx-auto">
         {/* Section Header */}
         <div className="text-center mb-20">
-          <h2 className="text-5xl md:text-6xl font-extralight tracking-tight mb-4" style={{ color: '#0a729f' }}>
+          <h2 className="text-5xl md:text-6xl font-extralight tracking-tight mb-4" style={{ fontFamily: 'var(--font-smooch-sans)', color: '#0a729f' }}>
             Singing to Sacred Landscapes
           </h2>
           <p className="text-xl font-light text-neutral-600 max-w-2xl mx-auto">
