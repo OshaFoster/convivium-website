@@ -11,6 +11,7 @@ export default function Navigation() {
   const navItems = [
     { name: 'Home', href: '/' },
     { name: 'Songs', href: '/music' },
+    // { name: 'Writing', href: '/writing' }, // Hidden while testing - page still accessible via /writing URL
   ];
 
   useEffect(() => {
