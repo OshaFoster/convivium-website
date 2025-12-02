@@ -122,7 +122,7 @@ export default async function BlogPost({ params }) {
         </Link>
 
         {/* Date */}
-        <time className="text-sm text-neutral-500 font-light">
+        <time className="block text-sm text-neutral-500 font-light mb-2">
           {new Date(post.date).toLocaleDateString('en-US', {
             year: 'numeric',
             month: 'long',
