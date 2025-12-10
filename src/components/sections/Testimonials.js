@@ -7,14 +7,19 @@ const testimonials = [
     author: "Danielle, photographer",
   },
   {
+    id: 3,
+    quote: "Marie Luna brings guidance with honor, humbleness and competence, drawing from decades of work, dedication, and studies. To work with her is a profound experience that will drive you into mystical and magical worlds, and show you your true self, with no veils or excuses. Her songs take you into the open space and time that you didn't know you were seeking, and her humor will ground in the most lovely and caring way. In her practice, kindness and rigor, joy and discipline, focus and freedom are in a harmonious balance to provide the safest possible experience.",
+    author: "Elena, singer, educator",
+  },
+  {
     id: 2,
     quote: "Marie Luna is a magical being, one of a kind. She has lived many lives, and she reminds me of what it means to be human and to be in community. When I am around her, I can feel my heart ache for the old ways—for a life filled with relationships of reciprocity with plants, animals, loved ones, land, and beyond. After I spend time with Marie, I find myself living in a more mindful rhythm, showing up with an open heart in my relationships, and noticing all the preciousness and beauty and blessings around me. Marie constantly redirects my attention to the collective and how to align myself, with joy and humor, in service. I am so grateful for Marie Luna.",
     author: "Emily, bodyworker",
   },
   {
-    id: 3,
-    quote: "Marie Luna brings guidance with honor, humbleness and competence, drawing from decades of work, dedication, and studies. To work with her is a profound experience that will drive you into mystical and magical worlds, and show you your true self, with no veils or excuses. Her songs take you into the open space and time that you didn't know you were seeking, and her humor will ground in the most lovely and caring way. In her practice, kindness and rigor, joy and discipline, focus and freedom are in a harmonious balance to provide the safest possible experience.",
-    author: "Elena, singer, educator",
+    id: 4,
+    quote: "Marie's gatherings have always provided me sincere spaces of warmth, safety, and heartfelt welcome. From my very first experience fifteen years ago, I felt the depth of her care in every detail— from the first welcome, to the thoughtful organization, the intentional curation of activities and songs, the reverence, and the nourishment offered through food and prayer. Marie creates an environment where people of all ages, beliefs, and backgrounds feel seen and at ease. Her events are not only well-run; they are crafted with a level of warmth, integrity, and quiet mastery that leaves a lasting imprint. The community and sense of belonging she fosters continue to resonate in my life and today. Thank you Marie.",
+    author: "Scott",
   },
 ];
 
@@ -35,7 +40,7 @@ export default function Testimonials() {
         </div>
 
         {/* Testimonials */}
-        <div className="grid lg:grid-cols-3 gap-12 max-w-6xl mx-auto">
+        <div className="grid md:grid-cols-2 gap-12 max-w-5xl mx-auto">
           {testimonials.map((testimonial, index) => (
             <ScrollReveal key={testimonial.id} delay={index * 150}>
             <div
