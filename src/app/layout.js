@@ -16,7 +16,7 @@ const smoochSans = Smooch_Sans({
 
 export const metadata = {
   title: "Pachamama Convivium",
-  description: "A gathering for music, spiritual teachings, fellowship, and conversation.",
+  description: "A gathering for music, earth-based wisdoms, fellowship, and conversation.",
 };
 
 export default function RootLayout({ children }) {
