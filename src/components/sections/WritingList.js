@@ -72,7 +72,7 @@ export default function WritingList({ posts = [] }) {
 
                   {/* Title */}
                   <h2 className="text-2xl font-light text-neutral-900 mt-3 mb-4 group-hover:text-sky-600 transition-colors">
-                    {post.title}
+                    <Link href={`/writing/${post.slug}`}>{post.title}</Link>
                   </h2>
 
                   {/* Excerpt */}

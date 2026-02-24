@@ -2,9 +2,9 @@ import ScrollReveal from '@/components/ScrollReveal';
 
 const testimonials = [
   {
-    id: 1,
-    quote: "I was warmly welcomed into a space of healing and community by Marie. My husband made the connection, and from that first meeting it was undeniably clearly that Marie has an uplifting presence. She uses her gifts and studies to create a sacred container that leads with love and light. I have enjoyed spending time with Marie around her home, during a music festival, and on trails with her beloved dogs, her insights and outlook on life are valuable and relatable.",
-    author: "Danielle, photographer",
+    id: 5,
+    quote: "Marie's orchestrations precipitated a dramatic shift in my own teaching process. I've been leading group music classes my entire adult life (and I'm pushing 60!). Her breadth of knowledge and experience are formidable. She listens and dances in spontaneity, navigating energetic flow in song and prayer for Mother Earth and the Cosmos, teaching reciprocity and kindness towards self and others that inspires me, helping me become a better conduit for guiding others to realize their authentic selves, sharing music together in a safe space. Marie models dropping labels and concepts, fluidly serving the moment in whatever particular ways are truly needed. The sound of her voice sings with childlike innocence and speaks from the depths of elder wisdom, never passing up an opportunity for fun and laughter. O beautiful soul is she! In loving gratitude!",
+    author: "Khabu",
   },
   {
     id: 3,
@@ -20,6 +20,11 @@ const testimonials = [
     id: 4,
     quote: "Marie's gatherings have always provided me sincere spaces of warmth, safety, and heartfelt welcome. From my very first experience fifteen years ago, I felt the depth of her care in every detail— from the first welcome, to the thoughtful organization, the intentional curation of activities and songs, the reverence, and the nourishment offered through food and prayer. Marie creates an environment where people of all ages, beliefs, and backgrounds feel seen and at ease. Her events are not only well-run; they are crafted with a level of warmth, integrity, and quiet mastery that leaves a lasting imprint. The community and sense of belonging she fosters continue to resonate in my life and today. Thank you Marie.",
     author: "Scott",
+  },
+  {
+    id: 1,
+    quote: "I was warmly welcomed into a space of healing and community by Marie. My husband made the connection, and from that first meeting it was undeniably clearly that Marie has an uplifting presence. She uses her gifts and studies to create a sacred container that leads with love and light. I have enjoyed spending time with Marie around her home, during a music festival, and on trails with her beloved dogs, her insights and outlook on life are valuable and relatable.",
+    author: "Danielle, photographer",
   },
 ];
 
@@ -40,33 +45,32 @@ export default function Testimonials() {
         </div>
 
         {/* Testimonials */}
-        <div className="grid md:grid-cols-2 gap-12 max-w-5xl mx-auto">
-          {testimonials.map((testimonial, index) => (
-            <ScrollReveal key={testimonial.id} delay={index * 150}>
-            <div
-              className="bg-warm-cream p-8 shadow-md hover:shadow-xl transition-shadow duration-300"
-            >
-              {/* Quote icon */}
-              <svg
-                className="w-10 h-10 mb-4"
-                fill="#0a729f"
-                viewBox="0 0 24 24"
-              >
-                <path d="M6 17h3l2-4V7H5v6h3zm8 0h3l2-4V7h-6v6h3z" />
-              </svg>
+        <div className="grid grid-cols-1 md:grid-cols-4 gap-8 max-w-6xl mx-auto">
+          {testimonials.map((testimonial, index) => {
+            const isLast = index === testimonials.length - 1;
+            const isOddTotal = testimonials.length % 2 !== 0;
+            const colClass = isLast && isOddTotal ? 'md:col-start-2 md:col-span-2' : 'md:col-span-2';
+            return (
+              <ScrollReveal key={testimonial.id} delay={index * 150} className={colClass}>
+                <div className="bg-warm-cream p-8 shadow-md hover:shadow-xl transition-shadow duration-300">
+                  {/* Quote icon */}
+                  <svg className="w-10 h-10 mb-4" fill="#0a729f" viewBox="0 0 24 24">
+                    <path d="M6 17h3l2-4V7H5v6h3zm8 0h3l2-4V7h-6v6h3z" />
+                  </svg>
 
-              {/* Quote */}
-              <p className="text-neutral-700 text-sm md:text-base leading-relaxed mb-6 italic">
-                &ldquo;{testimonial.quote}&rdquo;
-              </p>
+                  {/* Quote */}
+                  <p className="text-neutral-700 text-sm md:text-base leading-relaxed mb-6 italic">
+                    &ldquo;{testimonial.quote}&rdquo;
+                  </p>
 
-              {/* Author */}
-              <p className="text-neutral-900 font-light text-sm">
-                — {testimonial.author}
-              </p>
-            </div>
-            </ScrollReveal>
-          ))}
+                  {/* Author */}
+                  <p className="text-neutral-900 font-light text-sm">
+                    — {testimonial.author}
+                  </p>
+                </div>
+              </ScrollReveal>
+            );
+          })}
         </div>
       </div>
     </section>
