@@ -34,7 +34,8 @@ export default function WritingList({ posts = [] }) {
         <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8 max-w-7xl mx-auto">
           {posts.map((post, index) => (
             <ScrollReveal key={post._id} delay={index * 150}>
-              <article className="bg-white shadow-md hover:shadow-xl transition-all duration-300 overflow-hidden group">
+              <Link href={`/writing/${post.slug}`}>
+              <article className="bg-white shadow-md hover:shadow-xl transition-all duration-300 overflow-hidden group cursor-pointer">
                 {/* Featured Media (Image or Video) */}
                 {post.mediaType === 'video' && post.videoUrl ? (
                   <div className="relative h-64 overflow-hidden bg-black">
@@ -100,6 +101,7 @@ export default function WritingList({ posts = [] }) {
                   </Link>
                 </div>
               </article>
+              </Link>
             </ScrollReveal>
           ))}
         </div>
