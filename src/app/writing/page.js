@@ -1,6 +1,8 @@
 import WritingList from '@/components/sections/WritingList';
 import { getAllPosts } from '@/lib/sanity';
 
+export const revalidate = 0;
+
 export const metadata = {
   title: 'Writing - Pachamama Convivium',
   description: 'Reflections, teachings, and insights from Marie.',

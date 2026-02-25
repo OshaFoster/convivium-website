@@ -3,6 +3,9 @@ import Link from 'next/link';
 import { PortableText } from '@portabletext/react';
 import { getPostBySlug, getAllPostSlugs } from '@/lib/sanity';
 
+export const revalidate = 0;
+export const dynamicParams = true;
+
 export async function generateStaticParams() {
   const slugs = await getAllPostSlugs();
   return slugs.map((item) => ({
@@ -87,21 +90,24 @@ export default async function BlogPost({ params }) {
           />
           <div className="absolute inset-0 bg-gradient-to-b from-transparent via-transparent to-warm-cream"></div>
         </div>
-      ) : post.image ? (
-        <div className="relative h-96 md:h-[500px]">
-          <Image
-            src={post.image}
-            alt={post.imageAlt || post.title}
-            fill
-            className="object-cover"
-            priority
-          />
-          <div className="absolute inset-0 bg-gradient-to-b from-transparent via-transparent to-warm-cream"></div>
-        </div>
       ) : null}
 
       {/* Content */}
-      <div className="max-w-3xl mx-auto px-6 py-16">
+      <div className="max-w-3xl mx-auto px-6 pb-16 pt-0">
+        {/* Hero Image */}
+        {post.image && !(post.mediaType === 'video' && post.videoUrl) && (
+          <div className="relative h-96 md:h-[480px] mb-10">
+            <Image
+              src={post.image}
+              alt={post.imageAlt || post.title}
+              fill
+              className="object-cover object-top"
+              priority
+            />
+            <div className="absolute inset-0 bg-gradient-to-b from-transparent from-50% to-warm-cream"></div>
+          </div>
+        )}
+
         {/* Back Link */}
         <Link
           href="/writing"
