@@ -61,7 +61,7 @@ export default function WritingList({ posts = [] }) {
                 ) : null}
 
                 {/* Content */}
-                <div className="p-8">
+                <div className="p-8 text-center">
                   {/* Date */}
                   <time className="text-sm text-neutral-500 font-light">
                     {new Date(post.date).toLocaleDateString('en-US', {
@@ -84,7 +84,7 @@ export default function WritingList({ posts = [] }) {
                   {/* Read More Link */}
                   <Link
                     href={`/writing/${post.slug}`}
-                    className="inline-flex items-center text-sky-600 hover:text-sky-700 font-light transition-colors group"
+                    className="inline-flex items-center justify-center text-sky-600 hover:text-sky-700 font-light transition-colors group"
                   >
                     Read more
                     <svg

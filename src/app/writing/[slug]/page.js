@@ -128,7 +128,7 @@ export default async function BlogPost({ params }) {
         </Link>
 
         {/* Date */}
-        <time className="block text-sm text-neutral-500 font-light mb-2">
+        <time className="block text-sm text-neutral-500 font-light mb-2 text-center">
           {new Date(post.date).toLocaleDateString('en-US', {
             year: 'numeric',
             month: 'long',
@@ -138,14 +138,14 @@ export default async function BlogPost({ params }) {
 
         {/* Title */}
         <h1
-          className="text-5xl md:text-6xl font-extralight tracking-tight mt-4 mb-12"
+          className="text-5xl md:text-6xl font-extralight tracking-tight mt-4 mb-12 text-center"
           style={{ fontFamily: 'var(--font-smooch-sans)', color: '#0a729f' }}
         >
           {post.title}
         </h1>
 
         {/* Content - Render Portable Text */}
-        <div className="blog-content prose prose-lg max-w-none text-neutral-700">
+        <div className="blog-content prose prose-lg max-w-none text-neutral-700 text-center">
           <PortableText value={post.content} components={portableTextComponents} />
         </div>
 
