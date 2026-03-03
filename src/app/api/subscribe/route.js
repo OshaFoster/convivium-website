@@ -28,7 +28,7 @@ export async function POST(request) {
 
     const subscriberData = {
       email,
-      status: 'unconfirmed', // This triggers the double opt-in email
+      status: 'active',
       fields: {
         name: name || '',
       },
