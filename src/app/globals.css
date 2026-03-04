@@ -18,12 +18,11 @@
   }
 
   .blog-content p:first-of-type::first-letter {
-    font-size: 3.5rem;
+    font-size: 3rem;
+    font-family: var(--font-smooch-sans);
     font-weight: 300;
-    float: left;
-    line-height: 0.85;
-    margin-right: 0.1em;
-    margin-top: 0.12em;
+    line-height: 1;
+    vertical-align: bottom;
     color: #0a729f;
   }
 }
