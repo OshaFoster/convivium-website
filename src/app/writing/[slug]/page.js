@@ -145,7 +145,7 @@ export default async function BlogPost({ params }) {
         </h1>
 
         {/* Content - Render Portable Text */}
-        <div className="blog-content prose prose-lg max-w-none text-neutral-700 text-center">
+        <div className="blog-content prose prose-lg max-w-none text-neutral-700">
           <PortableText value={post.content} components={portableTextComponents} />
         </div>
 
