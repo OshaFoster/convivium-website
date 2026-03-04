@@ -21,9 +21,9 @@
     font-size: 3.5rem;
     font-weight: 300;
     float: left;
-    line-height: 1;
+    line-height: 0.85;
     margin-right: 0.1em;
-    margin-top: 0.1em;
+    margin-top: 0.12em;
     color: #0a729f;
   }
 }
